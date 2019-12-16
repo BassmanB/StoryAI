@@ -1,1 +1,1 @@
-web: waitress-serve storyAI.wsgi:application
+web: waitress-serve storyAI.wsgi
