@@ -1,1 +1,1 @@
-web: waitress-serve storyAI.wsgi
+web: waitress-serve --listen=127.0.0.1:8000 storyAI.wsgi:application
