@@ -25,7 +25,10 @@ SECRET_KEY = '4nfyl61hp75mldok_mp+tb)_cz8mtpk+n#0jy*eo37rq53u@xw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['story-ai.herokuapp.com']
+ALLOWED_HOSTS = [
+'story-ai.herokuapp.com',
+'127.0.0.1'
+]
 
 
 # Application definition

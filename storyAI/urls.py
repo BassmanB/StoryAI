@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
     path('generate/', views.generate),
+    path('author_response', views.AiModel.author_answer),
 ]
