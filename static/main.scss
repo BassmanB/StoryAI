@@ -1,3 +1,18 @@
 $success: green;
 
+.writer{
+	cursor: pointer;
+}
+p.capitalize {
+  
+  letter-spacing: 3px;
+  text-indent: 50px;
+
+}
+
+.gray{
+	background-color: #baa4ab;
+}
+
+
 @import './bootstrap/scss/bootstrap';

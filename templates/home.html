@@ -15,7 +15,7 @@
     <script src="{% static 'js/main.js' %}"></script>
     <script src="{% static 'js/make-story.js' %}"></script>
 
-    <title>Computer will finish your story</title>
+    <title>Komputer dokończy Twoją historię</title>
     
   </head>
 
@@ -33,15 +33,16 @@
         <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">History</a>
+        <a class="nav-link" href="#">Historie</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Check other stories</a>
+        <a class="nav-link" href="#">Sprawdz inne historie</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+     
+        <a class="nav-link" href="#">EN</a>
+
     </form>
   </div>
 </nav>
@@ -50,37 +51,53 @@
     
     <p>
     <blockquote class="blockquote">
-      "If there's a book that you want to read, but it hasn't been written yet, then you must write it."
-      <footer class="blockquote-footer">Toni Morrison</footer>
+      "Książką można czytelnikowi głowę, owszem przemeblować o tyle, o ile jakieś meble już w niej przed lekturą stały."
+      <footer class="blockquote-footer">Stanisław Lem</footer>
     </blockquote>
   </p>
 
   <div class="form-group">
-    	<label for="textarea1">Start story</label>
+    	<label for="textarea1">Zacznij historię</label>
       <textarea class="form-control" name="textarea1" id="special" cols="2" rows="3"></textarea>
 	</div>
-  <p>Choose who will finish your story</p>
+  <p>Wybierz kto dokończy Twoją historię</p>
   <div class="row">    
     <div class="col">
-      <img id="anton" src="{% static 'images/Anton_Chekhov.jpg' %}" class="img-thumbnail">
+      <img id="anton" src="{% static 'images/Anton_Chekhov.jpg' %}" class="img-thumbnail writer">
     </div>
     <div class="col">
-      <img src="{% static 'images/kurtvonnegut.jpg' %}" class="img-thumbnail">
+      <img  id="lem" src="{% static 'images/lem.jpg' %}" class="img-thumbnail writer">
     </div>
     <div class="col">
-      <img src="{% static 'images/stevenking.jpg' %}" class="img-thumbnail">
+      <img id="adam" src="{% static 'images/adam.jpg' %}" class="img-thumbnail writer">
     </div>
 
   </div>
 
-  <div class="row">
-    <p id="response"></p>
+  <div class="row d-flex justify-content-center mt-4">
+    <div class="text-center">
+      <img id="loader" class="img-fluid" hidden="true" src="{% static 'images/spin.gif' %}">
+    </div>
+    
+      <p id="response" class="capitalize">
+        
+      </p>
   </div>
 
  
 </div>
 
+<!-- Footer -->
+<footer class="page-footer font-small gray">
 
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Strory AI</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 </body>
 </html>
 
